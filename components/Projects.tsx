@@ -1,11 +1,11 @@
 import {
   Card,
-  CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import { Badge } from "./ui/badge"
 
 const Projects = () => {
   const projects = [
@@ -13,16 +13,19 @@ const Projects = () => {
       title: "Project A",
       description:
         "A sleek and modern web application built using React and Redux.",
+      technologies: ["React", "Redux"],
     },
     {
       title: "Project B",
       description:
         "An interactive e-commerce platform developed with Angular and TypeScript.",
+      technologies: ["Angular", "TypeScript"],
     },
     {
       title: "Project C",
       description:
         "A responsive landing page crafted using HTML, CSS, and JavaScript.",
+      technologies: ["HTML", "CSS", "JavaScript"],
     },
   ]
 
@@ -38,6 +41,11 @@ const Projects = () => {
               <CardTitle>{project.title}</CardTitle>
               <CardDescription>{project.description}</CardDescription>
             </CardHeader>
+            <CardFooter>
+              {project.technologies.map((tag) => (
+                <Badge key={tag}>{tag}</Badge>
+              ))}
+            </CardFooter>
           </Card>
         ))}
       </div>

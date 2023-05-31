@@ -7,11 +7,6 @@ import Header from "@/components/Header"
 
 const archivo = Archivo({ subsets: ["latin"] })
 
-export const metadata = {
-  title: "Hernan Barrios Paz",
-  description: "Bienvenid# a mi portfolio",
-}
-
 export default function RootLayout({
   children,
 }: {

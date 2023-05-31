@@ -1,6 +1,8 @@
 "use client"
 
 import Projects from "@/components/Projects"
+import { Button } from "@/components/ui/button"
+import { Download } from "lucide-react"
 
 const Home = () => {
   return (
@@ -10,10 +12,17 @@ const Home = () => {
           <h1 className="text-4xl font-extrabold tracking-tight scroll-m-20 lg:text-5xl">
             Fullstack Developer
           </h1>
-          <p className="max-w-[500px] leading-7 text-muted-foreground [&:not(:first-child)]:mt-6">
-            The king, seeing how much happier his subjects were, realized the
-            error of his ways and repealed the joke tax.
+          <p className="max-w-[600px] leading-7 text-muted-foreground [&:not(:first-child)]:mt-6">
+            Hola soy Hernan, un desarrollador web con experiencia en el front y
+            el back, tambien tengo ojo para el diseño y la experiencia de
+            usuario.
           </p>
+          <div className="max-w-[300px] mt-6">
+            <Button>
+              <Download className="w-4 h-4 mr-2" />
+              Descargar CV
+            </Button>
+          </div>
         </div>
         <Projects />
       </section>
