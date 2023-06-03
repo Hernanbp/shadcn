@@ -27,7 +27,7 @@ const ThemeToggle = () => {
 
   if (!mounted) return <></>
   return (
-    <DropdownMenu className="p-6">
+    <DropdownMenu>
       <DropdownMenuTrigger>
         <Button variant="ghost">
           {theme === "light" ? (

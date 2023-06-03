@@ -34,7 +34,7 @@ const Projects = () => {
       <h3 className="text-2xl font-semibold tracking-tight scroll-m-20">
         Proyectos
       </h3>
-      <div className="grid gap-4 md:grid-cols-3">
+      <div className="grid gap-2 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
           <Card key={project.title}>
             <CardHeader>
