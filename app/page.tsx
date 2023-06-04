@@ -1,8 +1,6 @@
-"use client"
-
+import Posts from "@/components/Posts"
 import Projects from "@/components/Projects"
 import { Button } from "@/components/ui/button"
-import { Separator } from "@/components/ui/separator"
 import { Download } from "lucide-react"
 
 const Home = () => {
@@ -30,7 +28,7 @@ const Home = () => {
           </div>
         </div>
         <Projects />
-        <Separator className="my-8" />
+        <Posts />
       </section>
     </main>
   )

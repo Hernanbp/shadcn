@@ -31,7 +31,7 @@ const Projects = () => {
 
   return (
     <div className="flex flex-col gap-6">
-      <h3 className="text-2xl font-semibold tracking-tight scroll-m-20">
+      <h3 className="text-3xl font-semibold tracking-tight scroll-m-20">
         Proyectos
       </h3>
       <div className="grid gap-2 md:grid-cols-2 lg:grid-cols-3">
